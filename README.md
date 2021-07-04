@@ -1,6 +1,6 @@
-Deliverable results for GPU training: [README_GPU](1_gpu_training/README_GPU.md)
+Deliverable results for GPU training: [README_GPU](1_gpu_training/README_GPU.md) and supporting document in folder [1_gpu_training](1_gpu_training)
 
-Deliverable results for NPU training: [README_NPU](2_npu_training/README_NPU.md)
+Deliverable results for NPU training: [README_NPU](2_npu_training/README_NPU.md) and supporting document in folder [2_npu_training](2_npu_training) 
 
 ### Code changes after using conversion tool:  
 | Issue | Code change|
