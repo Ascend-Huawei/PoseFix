@@ -1,6 +1,6 @@
-Deliverable results for GPU training: [README_GPU](https://rnd-gitlab-ca-g.huawei.com/hispark/model_training_hq/-/blob/master/PoseFix/1_gpu_training/README_GPU.md)
+Deliverable results for GPU training: [README_GPU](1_gpu_training/README_GPU.md)
 
-Deliverable results for NPU training: [README_NPU](https://rnd-gitlab-ca-g.huawei.com/hispark/model_training_hq/-/blob/master/PoseFix/2_npu_training/README_NPU.md)
+Deliverable results for NPU training: [README_NPU](2_npu_training/README_NPU.md)
 
 ### Code changes after using conversion tool:  
 | Issue | Code change|
