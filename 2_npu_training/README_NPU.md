@@ -27,11 +27,8 @@ wget http://download.tensorflow.org/models/resnet_v1_152_2016_08_28.tar.gz
 ```
 
 
-## Repo https://rnd-gitlab-ca-g.huawei.com/hispark/posefix/
-Clone
-```
-git clone ssh://git@rnd-gitlab-ca-g.huawei.com:2222/hispark/posefix.git
-```
+## Repo  
+Clone this repo.  
 Follow the original repo guide to put all the data as the following structure. The person_keypoints_256x192_resnet50_val2017_results should replace the name_of_input_pose.json under ${POSE_ROOT}data/COCO/input_pose. (For the folder structure, may refer to https://github.com/mks0601/PoseFix_RELEASE for more details)
 
 ```
@@ -93,8 +90,7 @@ sh run_npu_1p.sh
 
 
 ## pbtxt and ckpt
-checkpoint and pbtxt in onebox->HiSpark V2 -> /model_training_HQ/PoseFix/
-https://onebox.huawei.com/p/c1f48a8324c79079e4ce529d6dbe8862
+checkpoint and pbtxt in https://drive.google.com/drive/folders/15ANznISxzazKQDdl2oz6jUqWLcBLodZz?usp=sharing
 
 ## evaluation result
 | Experiment        | AP | AP(0.5) | AP(0.75) |  APM  | APL | AR | AR(0.5) | AR(0.75) |ARM | ARL |
