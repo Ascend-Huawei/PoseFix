@@ -1,0 +1,9 @@
+wget http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+wget http://images.cocodataset.org/zips/train2017.zip
+wget http://images.cocodataset.org/annotations/image_info_test2017.zip
+wget http://images.cocodataset.org/zips/val2017.zip
+wget http://images.cocodataset.org/zips/test2017.zip
+
+
+# https://drive.google.com/drive/folders/10d8oSlCnWD-n3CBARXFj7kDBOKXfSYmf  detection result from TFSimplePose
+# https://drive.google.com/drive/folders/1blrmQ2CRiCeJDjx7sFzLFOBtlALf2Uxa  groundth result.json
