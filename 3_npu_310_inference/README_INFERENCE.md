@@ -1,4 +1,5 @@
 # NPU inference on 200dk board doc
+## Convert pb to om model
 Get the pb file from https://onebox.huawei.com/p/594e2dda144f45dc8b356722d88c98b and run the atc command below to convert the model
 ```
  atc --framework=3 --model=posefix.pb --input_format=ND --input_shape="Placeholder:16,384,288,3;Placeholder_2:16,17,2;Placeholder_4:16,17"  --output=posefix --output_type=FP32 --out_nodes="mul_15:0" --soc_version=Ascend310
