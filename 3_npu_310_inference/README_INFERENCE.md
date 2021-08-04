@@ -2,7 +2,7 @@
 
 ## One image inference
 Put json file and image in the data folder.
-Get the model from https://onebox.huawei.com/p/e4eeff3a71698b5746ab5f9b531d82b3 \
+Get the model from https://onebox.huawei.com/p/594e2dda144f45dc8b356722d88c98b4 \
 and run the following script in the src folder
 ```
 python3 run_image.py --model ../model/posefix.om --input_json ../data/test.json
