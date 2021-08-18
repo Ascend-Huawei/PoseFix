@@ -12,7 +12,7 @@ and run the following script in the src folder
 ```
 python3 run_image.py --model ../model/posefix.om --input_json ../data/test.json
 ```
-The json file should follow the format of the test.json where the estimated_joints are the key points coordinates predicted and bbox is the person's bounding box in the image. 
+The json file should follow the format of the test.json where the estimated_joints are the predicted key points coordinates and bbox is the person's bounding box in the image. 
 
 ## Evaluation on 2017 coco dataset
 Get COCO dataset
