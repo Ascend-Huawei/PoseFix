@@ -28,7 +28,6 @@ wget http://download.tensorflow.org/models/resnet_v1_152_2016_08_28.tar.gz
 
 
 ## Repo  
-Clone this repo.  
 Follow the original repo guide to put all the data as the following structure. The person_keypoints_256x192_resnet50_val2017_results should replace the name_of_input_pose.json under ${POSE_ROOT}data/COCO/input_pose. (For the folder structure, may refer to https://github.com/mks0601/PoseFix_RELEASE for more details)
 
 ```
