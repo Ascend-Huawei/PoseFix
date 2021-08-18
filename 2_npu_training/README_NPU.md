@@ -91,6 +91,13 @@ sh run_npu_1p.sh
 ## pbtxt and ckpt
 checkpoint and pbtxt in https://drive.google.com/drive/folders/15ANznISxzazKQDdl2oz6jUqWLcBLodZz?usp=sharing
 
+## Finetune on your own dataset
+You need to follow the following steps to train on your own dataset
+1) Create a folder in the data with the name your dataset and follow similar structure of COCO
+2) create a dataset.py in that folder.
+3) Change the config file, especially the paths for the data
+4) run the training command
+
 ## evaluation result
 | Experiment        | AP | AP(0.5) | AP(0.75) |  APM  | APL | AR | AR(0.5) | AR(0.75) |ARM | ARL |
 |:-----------------:|:---------:|:---------:|:----------:|:-------:|:-----------------:|:---------:|:---------:|:----------:|:-----:|-----|
