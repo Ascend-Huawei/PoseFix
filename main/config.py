@@ -81,6 +81,10 @@ class Config:
         os.environ["CUDA_VISIBLE_DEVICES"] = self.gpu_ids
         print('>>> Using /gpu:{}'.format(self.gpu_ids))
 
+    def set_attr(self, attr_name, attr_val):
+        self.__setattr__(attr_name, attr_val)
+
+
 cfg = Config()
 
 sys.path.insert(0, osp.join(cfg.root_dir, 'lib'))

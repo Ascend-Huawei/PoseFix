@@ -1,0 +1,9 @@
+Network = POSEFIX_RELEASE
+RankSize = 1
+BatchSize = 16
+DeviceType = aarch64
+CaseName = POSEFIX_RELEASE_bs16_1p_perf
+ActualFPS = 133.33
+TrainingTime = 0.12
+ActualLoss = 4.3407
+E2ETrainingTime = 673

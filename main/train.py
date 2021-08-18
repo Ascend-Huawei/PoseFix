@@ -12,6 +12,8 @@ from tfflat.utils import mem_info
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--gpu', type=str, dest='gpu_ids')
+    parser.add_argument('--train_epochs', type= int, dest='train_epochs')
+    parser.add_argument('--batch_size', type= int, dest='batch_size')
     parser.add_argument('--continue', dest='continue_train', action='store_true')
     args = parser.parse_args()
 
@@ -28,7 +30,8 @@ def parse_args():
 args = parse_args()
 
 cfg.set_args(args.gpu_ids, args.continue_train)
-
+cfg.set_attr("end_epoch", args.train_epochs)
+cfg.set_attr("batch_size", args.batch_size)
 trainer = Trainer(Model(), cfg)
 trainer.train()
 
