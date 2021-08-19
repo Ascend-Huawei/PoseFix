@@ -130,9 +130,12 @@ class Model(ModelDesc):
         xx = tf.reshape(tf.to_float(xx), (1,*output_shape,1))
         yy = tf.reshape(tf.to_float(yy), (1,*output_shape,1))
               
-        x = tf.reshape(coord[:,:,0],[-1,1,1,cfg.num_kps]) / cfg.input_shape[1] * output_shape[1]
-        y = tf.reshape(coord[:,:,1],[-1,1,1,cfg.num_kps]) / cfg.input_shape[0] * output_shape[0]
+        #x = tf.reshape(coord[:,:,0],[-1,1,1,cfg.num_kps]) / cfg.input_shape[1] * output_shape[1]
+        #y = tf.reshape(coord[:,:,1],[-1,1,1,cfg.num_kps]) / cfg.input_shape[0] * output_shape[0]
 
+        x = tf.reshape(tf.slice(coord,[0,0,0],[cfg.batch_size,cfg.num_kps,1]),[cfg.batch_size,1,1,cfg.num_kps]) /  cfg.input_shape[1] * output_shape[1]
+        y = tf.reshape(tf.slice(coord,[0,0,1],[cfg.batch_size,cfg.num_kps,1]),[cfg.batch_size,1,1,cfg.num_kps]) /  cfg.input_shape[0] * output_shape[0]
+        
         heatmap = tf.exp(-(((xx-x)/tf.to_float(sigma))**2)/tf.to_float(2) -(((yy-y)/tf.to_float(sigma))**2)/tf.to_float(2))
 
         if valid is not None:
