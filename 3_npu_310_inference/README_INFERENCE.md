@@ -6,6 +6,9 @@ Get the pb file from https://onebox.huawei.com/p/594e2dda144f45dc8b356722d88c98b
 ```
 
 ## One image inference
+
+Get test data from https://drive.google.com/drive/folders/15ANznISxzazKQDdl2oz6jUqWLcBLodZz?usp=sharing
+
 Put json file and image in the data folder.
 Get the model from https://onebox.huawei.com/p/b94012a151adc69e42b418a01a00b33a \
 and run the following script in the src folder

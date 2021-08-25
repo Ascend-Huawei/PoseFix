@@ -95,7 +95,7 @@ OR
 bash run_1p.sh
 ```
 
-## pbtxt and ckpt
+## pbtxt and ckpt and training_log
 checkpoint and pbtxt in https://drive.google.com/drive/folders/15ANznISxzazKQDdl2oz6jUqWLcBLodZz?usp=sharing
 
 ## evaluation result
