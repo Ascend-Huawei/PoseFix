@@ -93,6 +93,11 @@ Use the npu conversion tool before going into the manual change. This tool will 
 Afterwards, modify the code in the model part. Remove anything related with device allocation like gpu:0 and cpu:0. Remove the tower gradients in the posefix.
 The following image shows the main change made to the project.
 
+<img src="images/diff1.png" width="800"><br>
+
+Another change is to convert the pythonic slicing method into tf.slice for inference on 200dk board.
+
+<img src="images/diff2.png" width="800"><br>
 
 ## 3. Training and evaluation
 For the rest part, refer to the README files in the gpu/npu training and npu inference.
