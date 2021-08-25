@@ -91,15 +91,8 @@ ${POSE_ROOT}
 ## 2. Modify the code
 Use the npu conversion tool before going into the manual change. This tool will help you import all the necessary headers and fix some basic differences between NPU and GPU training.
 Afterwards, modify the code in the model part. Remove anything related with device allocation like gpu:0 and cpu:0. Remove the tower gradients in the posefix.
+The following image shows the main change made to the project.
 
-## 3. Train the model
-Create the shell files in the scripts according to you need (if needed for distributed training or just on one NPU)
 
-## 4. Save Model
-Save the model at the end of the training and convert it into pb file.
-
-## 5. Convert PB to OM
-Convert the pb model to the OM model using atc command or MindStudio. 
-
-## 6. Run inference using OM model
-Load the om model on inference enviroment. Refer to Inference.md
+## 3. Training and evaluation
+For the rest part, refer to the README files in the gpu/npu training and npu inference.
